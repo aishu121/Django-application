@@ -9,6 +9,7 @@ class Name(models.Model):
 
 class ID(models.Model):
     id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=50)
 
 class Contact(models.Model):
     contact = models.CharField(max_length=100)
